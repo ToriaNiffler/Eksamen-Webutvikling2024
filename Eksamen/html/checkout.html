@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="font/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
-    <link href="font/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
-    <link href="font/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <link href="font/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="font/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet">
+    <link href="font/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <title>Hjemmeside</title>
 </head>
 <body>
     <div id="grid">
         <header>
+                
+            <form> 
+                <label for="search">Søk</label>
+                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                <input type="submit" value="søk">
+            </form>
+
             <img src="../img/logo.png" alt="Logo for nettsted" id="logo">
     
-            <a href="checkout.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
             <nav>
                 <ul>
                     <li>
@@ -35,13 +42,6 @@
                     </li>
                 </ul>
      
-    
-                <form> 
-                    <label for="search">Søk</label>
-                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                    <input type="submit" value="søk">
-                </form>
-    
             </nav>
         </header>
     <main>
@@ -72,7 +72,101 @@
         </section>
 
         <section>
-            <h4>Dine Opplysninger</h4>
+            <h3>Dine Opplysninger</h3>
+
+            <form method="post" action="#"></form>
+                <label>
+                    <input type="text" name="name" placeholder="Fornavn*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+
+                <label>
+                    <input type="text" name="name" placeholder="Etternavn*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+    
+                <label>
+                    <input type="email" name="email" placeholder="mail@mail.no*" required>
+                </label>
+
+                <label>
+                    <input type="text" name="adresse" placeholder="gateadresse*" required>
+                </label>
+
+                <label>
+                    <input type="text" name="postnummer" placeholder="postnummer*" required>
+                </label>
+                
+                <label>
+                    <input type="text" name="By" placeholder="By*" required>
+                </label>
+
+                <input type="submit" value="Send">
+        </section>
+
+        <section>
+            <h3>Levering</h3>
+
+            <label>
+                Ekspress Hjemmelevering
+                <input type="checkbox" name="levereing"> 
+            </label>
+            
+            <label>
+                Ekspress levering til Utsted
+                <input type="checkbox" name="levereing">
+            </label>
+            
+            <label>
+                Levering hjem
+                <input type="checkbox" name="levereing">
+
+            </label>
+        </section>
+
+        <section>
+
+            <h4>Betalingsinfo</h4>
+            
+            <label>
+                Kortnummer
+                <input type="text" name="kort" placeholder="1234***124436" required>
+            </label>
+
+            <label>
+                Utløpsdato
+                <input type="text" name="utlopsdato" placeholder="mm / dd / yyyy" required>
+            </label>
+            
+            <label>
+                CCV
+                <input type="text" name="CCV" placeholder="CCV" required>
+            </label>
+
+        </section>
+
+        <section>
+            
+            <h4>Å betale inkl. mva.</h4>
+            <h4>4500kr</h4>
+            <input type="submit" value="Fulfør kjøp">
+
+            <p>
+                Du bekrefter herved at opplysningene og dokumentene du har
+                oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                uriktige eller ufullstendige opplysninge
+            </p>
+
+            
+            <label>
+                Ja takk! send nyhetsbrev!
+                <input type="checkbox" name="Jabrev">
+            </label>
+            
+            <label>
+                Jeg ønsker teksmeldinger med oppdatering!
+                <input type="checkbox" name="meldingbrev">
+
+            </label>
         </section>
 
 
@@ -81,18 +175,29 @@
     <footer>
 
         <section>
-            <a href="../img/logo.png"></a>
+            <img src="../img/logo.png" alt="Logo" id="logos">
         </section>
     
         <section id="kontakt">
             <h4>Kontakt oss</h4>
-            <p>
-                Kontaktinfo:
-                e-mail: mail@mail.no
-                tlf: 11 22 33 44
-                adresse: borher 56, 8897, EtLand
-            </p>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a>E-mail: mail@mail.no </a>
+                        </li>
+                        
+                        <li>
+                            <a>Tlf: 11 22 33 44 </a>
+                        </li>
+                        
+                        <li>
+                            <a>Adresse: borher 56, 8897, EtLand </a>
+                        </li>
+                    </ul>
+                </nav>
         </section>
+
     
         <section>
             <h4>Snarveier</h4>
