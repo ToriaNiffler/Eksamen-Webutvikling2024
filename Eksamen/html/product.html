@@ -10,28 +10,40 @@
     <title>Hjemmeside</title>
 </head>
 <body>
-    <header>
-        <img src="#" alt="Logo for nettsted">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">HomePage</a>
-                </li>
-                <li>
-                    <a href="product.html">Se produktene våres</a>
-                </li>
-                <li>
-                    <a href="checkout.html">Handlekurv</a>
-                </li>
-            </ul>
-            <form> 
-                <label for="search">Søk</label>
-                <input type="search" placeholder="Søk etter produkter">
-                <input type="submit" value="search">
-            </form>
-
-        </nav>
-    </header>
+    <div id="grid">
+        <header>
+            <img src="../img/logo.png" alt="Logo for nettsted" id="logo">
+    
+            <a href="checkout.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <a href="#products">produkter</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#kategorier">Kategorier</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#kontakt">Kontakt oss</a>
+                    </li>
+                </ul>
+     
+    
+                <form> 
+                    <label for="search">Søk</label>
+                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                    <input type="submit" value="søk">
+                </form>
+    
+            </nav>
+        </header>
 
     <main>
         <sectiom>
@@ -74,32 +86,51 @@
 
     </main>
 
+    <footer>
+
+        <section>
+            <a href="../img/logo.png"></a>
+        </section>
+    
+        <section id="kontakt">
+            <h4>Kontakt oss</h4>
+            <p>
+                Kontaktinfo:
+                e-mail: mail@mail.no
+                tlf: 11 22 33 44
+                adresse: borher 56, 8897, EtLand
+            </p>
+        </section>
+    
+        <section>
+            <h4>Snarveier</h4>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#products">produkter</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#kategorier">Kategorier</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#kontakt">Kontakt oss</a>
+                        </li>
+                    </ul>
+                </nav>
+        </section>
+    
+        <section>
+            <h4>Sosiale medier</h4>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.linkedin.com/feed/">Linkedin</a>
+            <a href="https://no.pinterest.com">Pintrest</a>
+        </section>
+    </footer>
+</div>
+
 </body>
 
-<footer>
-
-    <section>
-        <p>Logo??</p>
-    </section>
-
-    <section>
-        <p>
-            Kontaktinfo:
-            e-mail: mail@mail.no
-            tlf: 11 22 33 44
-            adresse: borher 56, 8897, EtLand
-        </p>
-    </section>
-
-    <section>
-        <p>Lag snarveier, øverst i nettsiden??</p>
-    </section>
-
-    <section>
-        <a href="https://www.instagram.com">Instagram</a>
-        <a href="https://www.facebook.com">Facebook</a>
-        <a href="https://www.linkedin.com/feed/">Linkedin</a>
-        <a href="https://no.pinterest.com">Pintrest</a>
-    </section>
-</footer>
 </html>
